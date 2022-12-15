@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.f4{
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		.f5{
+			background-color: green;
+			height: 30px;
+			width: 80px;
+		}
+		.f6{
+			background-color: blue;
+			height: 30px;
+			width: 80px;
+		}
+	</style>
+</head>
+<body>
+
+
+	<form onsubmit="onSubmit(event)" action="#">
+		<div>Register</div>
+		<input class="f4" type="text" name="name" placeholder="Enter your full name" id="name" required>
+		<br>
+		<input class="f4" type="email" name="email" id="email" placeholder="Enter your email" required>
+		<br>
+		<input class="f4" type="password" name="password" id="password" placeholder="Enter your password" required>
+		<div>
+			<div>Male<input type="radio" name="radio" id="male" required></div>
+			<div>Female<input type="radio" name="radio" id="female"></div>
+		</div>
+		<br>
+		<div class="f4">Choose your Birth date</div>
+		<input class="f4" type="date" name="date" id="br-day" required>
+		<br>
+		<div class="f4">Choose your Birth hour</div>
+		<input class="f4" type="time" name="time" id="bd-time">
+		<br>
+		<div class="f4">Choose your favorite color</div>
+		<input type="color" name="color" id="color">
+		<br>
+		<div class="f4">Country of birth</div>
+		<select class="f4" name="country" id="country">Choose your country of birth
+		<option value="off">Not chosen</option>
+		<option value="kz">Kazakhstan</option>
+		<option value="rus">Russia</option>
+		<option value="ger">Germany</option>
+		</select>
+		<br>
+		<input class="f4" type="textarea" name="textarea" placeholder="Enter your favorite car">
+		<br>
+		<input class="f4" type="file" name="file" id="img">
+		<br>
+		<button class="f5" type="sumbit">Save</button>
+		<button class="f6" type="sumbit" onclick="checkOut()">Check</button>
+	</form>
+
+
+
+	<script>
+		
+      function checkOut(){
+        console.log(localStorage.getItem('name'))
+        console.log(localStorage.getItem('password'))
+        console.log(localStorage.getItem('email'))
+        console.log(localStorage.getItem('date'))
+        console.log(localStorage.getItem('time'))
+        console.log(localStorage.getItem('color'))
+        console.log(localStorage.getItem('country'))
+        console.log(localStorage.getItem('textarea'))
+        console.log(localStorage.getItem('file'))
+      }
+      function onSubmit(event){
+
+        let name = document.getElementById('name').value
+        let password = document.getElementById('password').value
+
+        console.log(name)
+        console.log(password)
+        let dannye = event.target;
+        let formdata = new FormData(dannye)
+        let form_data_obj = Object.fromEntries(formdata)
+        
+        console.log(form_data_obj);
+
+        localStorage.setItem('name', form_data_obj.name)
+        localStorage.setItem('password',form_data_obj.password)
+        event.preventDefault();
+      }
+    
+	</script>
+</body>
+</html>

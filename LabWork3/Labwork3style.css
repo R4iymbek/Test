@@ -1,0 +1,181 @@
+body{
+	background-image: url("top-10.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.grayblock{
+	width: 876px;
+	height: 353px;
+	margin-top: 28px;
+	margin-left: 28px;
+
+	background-color: #A59E9E4D;
+	opacity: 0.5;
+
+	border: 1px solid #000000;
+}
+
+.imgandtitle{
+	display: flex;
+}
+
+.avatar{
+	width: 120px;
+	height: 140px;
+	padding-top: 12px;
+	padding-left: 12px;
+	padding-right: 53px;
+}
+
+.title{
+	padding-top: 26px;
+	color: #fff;
+}
+
+.t1{
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 29px;
+	padding-bottom: 4px;
+}
+.t2{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+}
+
+.f3{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	color: #fff;
+
+	padding-top: 19px;
+	padding-left: 33px;
+}
+
+.call{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	color: #fff;
+
+	padding-top: 24px;
+	padding-left: 33px;
+}
+
+.number{
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+
+	color: #FFBBBB;
+}
+
+
+
+
+
+
+
+/*Second Page*/
+.about{
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	color: #fff;
+
+	margin-top: 28px;
+	margin-left: 51px;
+}
+.schedule{
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	color: #fff;
+	padding-top: 11px;
+	margin-left: 412px;
+}
+.ttable{
+	padding-top: 9px;
+	margin-left: 196px;	
+}
+
+.table{
+	width: 721px;
+	height: 467px;
+	background-color: #fff;
+	text-align: center;
+	background-color: #D9D9D9;
+}
+
+table,td,th{
+	border: 1px solid black;
+}
+
+.trtitle{
+	background-color: #727272;
+}
+
+
+
+
+
+
+
+/*footer*/
+.footer{
+	left: 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer1{
+	display: flex;
+	height: 58px;
+	background-color: #212121;
+	align-items: center;
+}
+
+.footer2{
+	height: 31px;
+	bottom: 0;
+	background-color: #000;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.footer2text{
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	color: #fff;
+}
+.not{
+	color: #FF0000;
+}
+
+.foot{
+	width: 33.3333%;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 14.52px;
+	color: #fff;
+	padding-left: 220px;
+	text-decoration: none;
+}
+
+
+
+.whatsapp{
+	position: absolute;
+	margin-left: 1400px;
+	margin-top: 180px; 
+	width: 50px;
+	height: 50px;
+	background: linear-gradient(0deg, rgba(169, 169, 169, 0.3), rgba(169, 169, 169, 0.3));
+	border-radius: 100px;
+}

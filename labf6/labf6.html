@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="labf6style.css"> 
+    <title>assigment</title> 
+</head> 
+<body> 
+    <div id="c1" style="height: 100px; width: 100px; background-color: black; color: aliceblue; ">Toyota</div> 
+    <div id="c2" style="height: 100px; width: 100px; background-color: black; color: aliceblue;">Audi</div> 
+    <div id="a1" style="height: 100px; width: 100px; background-color: black; color: aliceblue;">Dog</div> 
+    <div id="a2" style="height: 100px; width: 100px; background-color: black; color: aliceblue;">Tiger</div> 
+    <div id="f1" style="height: 100px; width: 100px; background-color: black; color: aliceblue;">Apple</div> 
+    <div id="f2" style="height: 100px; width: 100px; background-color: black; color: aliceblue;">Orange</div> 
+    <br> 
+ 
+    <button onclick="car()">Cars</button> 
+    <button onclick="animal()">Animals</button> 
+    <button onclick="fruite()">Fruites</button> 
+     
+</body> 
+<script> 
+function car(){ 
+document.getElementById("c1").style.width = "100px"; 
+document.getElementById("c2").style.width = "100px"; 
+document.getElementById("c1").innerHTML = "Toyota"; 
+document.getElementById("c2").innerHTML = "Audi"; 
+
+document.getElementById("a1").style.width = "80px"; 
+document.getElementById("a2").style.width = "80px"; 
+document.getElementById("a1").innerHTML = ""; 
+document.getElementById("a2").innerHTML = "";
+
+document.getElementById("f1").style.width = "80px"; 
+document.getElementById("f2").style.width = "80px"; 
+document.getElementById("f1").innerHTML = ""; 
+document.getElementById("f2").innerHTML = ""; 
+} 
+ 
+function animal(){  
+document.getElementById("a1").style.width = "80px"; 
+document.getElementById("a2").style.width = "80px"; 
+document.getElementById("a1").innerHTML = ""; 
+document.getElementById("a2").innerHTML = ""; 
+
+document.getElementById("c1").style.width = "100px"; 
+document.getElementById("c2").style.width = "100px"; 
+document.getElementById("c1").innerHTML = "Dog"; 
+document.getElementById("c2").innerHTML = "Tiger";
+
+document.getElementById("f1").style.width = "80px"; 
+document.getElementById("f2").style.width = "80px"; 
+document.getElementById("f1").innerHTML = ""; 
+document.getElementById("f2").innerHTML = ""; 
+} 
+ 
+function fruite(){ 
+document.getElementById("f1").style.width = "80px"; 
+document.getElementById("f2").style.width = "80px"; 
+document.getElementById("f1").innerHTML = ""; 
+document.getElementById("f2").innerHTML = ""; 
+
+document.getElementById("a1").style.width = "80px"; 
+document.getElementById("a2").style.width = "80px"; 
+document.getElementById("a1").innerHTML = ""; 
+document.getElementById("a2").innerHTML = ""; 
+
+document.getElementById("c1").style.width = "100px"; 
+document.getElementById("c2").style.width = "100px"; 
+document.getElementById("c1").innerHTML = "Apple"; 
+document.getElementById("c2").innerHTML = "Orange";
+} 
+ 
+ 
+</script> 
+</html>
